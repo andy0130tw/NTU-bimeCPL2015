@@ -75,5 +75,6 @@ int main() {
              << setw(8) << right << a[i][1] << endl;
     }
     
+    system("pause");
 }
 

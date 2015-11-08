@@ -5,7 +5,10 @@
 //  DESCRIPTION : A 2-dice simulator.
 //================================================================
 
-// #include "stdafx.h"
+#ifdef _MSC_VER
+#include "stdafx.h"
+#endif // _MSC_VER
+
 #include<iostream>
 #include<iomanip>
 #include<cstdlib>
@@ -64,7 +67,12 @@ void showToss(int cnt) {
     cout << endl;
 }
 
+#ifdef _MSC_VER
+int main(int argc, _TCHAR* argv[]) {
+#else
 int main() {
+#endif // _MSC_VER
+
     // randomize; using time as random seed
     srand(time(NULL));
     
@@ -72,6 +80,6 @@ int main() {
     showToss(10000);
     showToss(100000);
     
-    cin.get();
+    system("pause");
 }
 
