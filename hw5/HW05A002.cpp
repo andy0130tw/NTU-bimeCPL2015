@@ -48,7 +48,7 @@ void clearLineUntilEnd(int l, int t) {
 
 void updateCell(int x, int y, int newState, int lnOffset) {
     Console::SetCursorPosition(y * 2, lnOffset + x + 1);
-    cout << (newState ? "¡½" : "¡¼");
+    cout << (newState ? "■" : "□");
 }
 
 void simulateCells(int cell[][SIZE_PAD], int delta[][SIZE_PAD], int posTop) {
@@ -83,7 +83,7 @@ void outputCells(int t[SIZE_PAD][SIZE_PAD]) {
     Console::SetCursorPosition(0, 2);
     for (int i = 1; i <= SIZE; i++) {
         for (int j = 1; j <= SIZE; j++) {
-            cout << (t[i][j] ? "¡½" : "¡¼");
+            cout << (t[i][j] ? "■" : "□");
         }
         cout << endl;
     }
