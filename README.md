@@ -1,2 +1,4 @@
-# NTU-bimeCPL2015
-Computer programming language course, BIME 2015 Fall. Thanks @linnil1.
+# NTU BIME CPL 2015 Fall
+A repo for homework for BIME Programming Language Fall 2015 (ouo)/ .
+Thanks @linnil1 for providing crispy ideas.
+
